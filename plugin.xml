@@ -24,9 +24,9 @@
     <preference name="FACEBOOK_AUTO_LOG_APP_EVENTS" default="true" />
     <preference name="FACEBOOK_HYBRID_APP_EVENTS" default="false" />
     <preference name="FACEBOOK_ADVERTISER_ID_COLLECTION" default="true" />
-    <preference name="FACEBOOK_ANDROID_SDK_VERSION" default="11.3.0"/>
+    <preference name="FACEBOOK_ANDROID_SDK_VERSION" default="16.0.1"/>
     <preference name="FACEBOOK_IOS_SDK_VERSION" default="11.1.0"/>
-    <preference name="FACEBOOK_BROWSER_SDK_VERSION" default="v11.0" />
+    <preference name="FACEBOOK_BROWSER_SDK_VERSION" default="v16.0" />
 
     <engines>
         <engine name="cordova-android" version=">=9.0.0" />
@@ -75,7 +75,7 @@
             <activity android:name="com.facebook.FacebookActivity"
               android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
               android:label="@string/fb_app_name" />
-            <provider android:authorities="com.facebook.app.FacebookContentProvider$APP_ID"
+            <provider android:authorities="${applicationId}.com.facebook.app.FacebookContentProvider$APP_ID"
               android:name="com.facebook.FacebookContentProvider"
               android:exported="true" />
         </config-file>
